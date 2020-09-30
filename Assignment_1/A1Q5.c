@@ -1,5 +1,16 @@
-// parent.c: the parent program
+#include <stdio.h>
+#include <unistd.h>
+int main(){
+	char arg;
+	printf("Enter the c program to be compiled and linked : ");
+	scanf("%s",&arg);
+   system("cc -o ./a.out arg");
+   execl("./a.out", "a.out", NULL);
+   return 0;
+}
 
+// parent.c: the parent program
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -37,3 +48,4 @@ int main (int argc, char **argv)
     if (ret == pid)
         printf ("Parent: Child process waited for.\n");
 }
+*/
