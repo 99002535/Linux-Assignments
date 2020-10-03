@@ -9,30 +9,21 @@
   
 int main() { 
   
-    struct rlimit old_lim, lim, new_lim; 
+    struct rlimit lim; 
   
-    // Get old limits 
-    if( getrlimit(RLIMIT_NOFILE, &old_lim) == 0) 
-        printf("Old limits -> soft limit= %ld \t"
-           " hard limit= %ld \n", old_lim.rlim_cur,  
-                                 old_lim.rlim_max); 
+
+    if( getrlimit(RLIMIT_NOFILE, &lim) == 0) 
+        printf("Resource limits -> soft limit= %ld \t"
+           " hard limit= %ld \n", lim.rlim_cur,  
+                               lim.rlim_max); 
     else
         fprintf(stderr, "%s\n", strerror(errno)); 
       
-    // Set new value 
-    lim.rlim_cur = 3; 
-    lim.rlim_max = 1024; 
-  
-    // Set limits 
-    if(setrlimit(RLIMIT_NOFILE, &lim) == -1) 
-        fprintf(stderr, "%s\n", strerror(errno)); 
-      
-    // Get new limits 
-    if( getrlimit(RLIMIT_NOFILE, &new_lim) == 0) 
-        printf("New limits -> soft limit= %ld "
-         "\t hard limit= %ld \n", new_lim.rlim_cur,  
-                                  new_lim.rlim_max); 
-    else
-        fprintf(stderr, "%s\n", strerror(errno)); 
+ 
     return 0; 
 } 
+
+/*
+    soft limit: The soft limit is the actual limit enforced by the kernel for the corresponding resource.
+    hard limit: The hard limit acts as a ceiling for the soft limit.
+*/
