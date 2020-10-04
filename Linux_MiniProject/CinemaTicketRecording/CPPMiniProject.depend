@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1601754245 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\movie.cpp
+	"Movie.h"
+	<string>
+
+1601827870 d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\movie.h
+	<string>
+
+1601754043 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\moviedb.cpp
+	"MovieLang.h"
+	"Movie.h"
+	"Moviedb.h"
+	<string>
+	<list>
+	<iterator>
+	<thread>
+	<semaphore.h>
+	<iostream>
+
+1601827880 d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\movielang.h
+	"Movie.h"
+
+1601827878 d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\moviedb.h
+	<cstdint>
+	"Movie.h"
+	"MovieLang.h"
+	<list>
+	<iterator>
+
+1601754141 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\moviedb-test.cpp
+	"Movie.h"
+	"MovieLang.h"
+	"Moviedb.h"
+	<gtest/gtest.h>
+	<iostream>
+	<pthread.h>
+	<semaphore.h>
+	<list>
+	<iterator>
+	<cstdint>
+
+1601755103 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\movielang.cpp
+	<string>
+	"Movie.h"
+	"MovieLang.h"
+
+1601754843 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\miniproject\miniproject\cppminiproject\movie-test.cpp
+	"Movie.h"
+	"MovieLang.h"
+	"Moviedb.h"
+	<gtest/gtest.h>
+

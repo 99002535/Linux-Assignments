@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <source_groups>
+        <source_group_e8ef32ea-a437-495d-bd3e-d05d71edd1f3>
+            <c_standard>c17</c_standard>
+            <codeblocks_project_path>CPPMiniProject.cbp</codeblocks_project_path>
+            <cpp_standard>c++17</cpp_standard>
+            <indexed_header_paths>
+                <indexed_header_path>Movie.h</indexed_header_path>
+                <indexed_header_path>Moviedb.h</indexed_header_path>
+                <indexed_header_path>MovieLang.h</indexed_header_path>
+            </indexed_header_paths>
+            <name>C/C++ from Code::Blocks</name>
+            <source_extensions>
+                <source_extension>.c</source_extension>
+                <source_extension>.cpp</source_extension>
+                <source_extension>.cxx</source_extension>
+                <source_extension>.cc</source_extension>
+            </source_extensions>
+            <status>enabled</status>
+            <type>C/C++ from Code::Blocks</type>
+        </source_group_e8ef32ea-a437-495d-bd3e-d05d71edd1f3>
+    </source_groups>
+    <version>8</version>
+</config>
