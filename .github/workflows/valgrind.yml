@@ -22,4 +22,4 @@ jobs:
     - name: make all
       run: |
         make all -C Linux_MiniProject/CinemaTicketRecording/
-        valgrind ./Linux_MiniProject/CinemaTicketRecording/Moviedb-test.o
+        sudo valgrind ./Linux_MiniProject/CinemaTicketRecording/Moviedb-test.o
