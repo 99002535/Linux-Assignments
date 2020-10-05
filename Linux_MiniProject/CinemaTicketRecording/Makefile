@@ -1,5 +1,5 @@
 all: all.out
-all.out : Movie.o MovieLang.o Moviedb.o Movie-test.o Moviedb-test.o
+all.out: Movie.o MovieLang.o Moviedb.o Movie-test.o Moviedb-test.o
 	g++ $^ -o $@ -lgtest -lgtest_main -lpthread
 Moviedb-test.o: Moviedb-test.cpp Movie.h MovieLang.h Moviedb.h
 	g++ $< -c
