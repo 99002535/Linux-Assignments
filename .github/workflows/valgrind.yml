@@ -24,5 +24,4 @@ jobs:
     - name: make all
       run: |
         make all -C Linux_MiniProject/CinemaTicketRecording/
-        g++ Linux_MiniProject/CinemaTicketRecording/Moviedb-test.cpp -lgtest -lgtest_main -lpthread -o Linux_MiniProject/CinemaTicketRecording/all.out
         valgrind ./all.out
