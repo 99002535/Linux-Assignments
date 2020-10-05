@@ -24,4 +24,4 @@ jobs:
     - name: make all
       run: |
         make all -C Linux_MiniProject/CinemaTicketRecording/
-        valgrind ./all.out
+        valgrind ./Linux_MiniProject/CinemaTicketRecording/all.out
