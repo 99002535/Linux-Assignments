@@ -23,5 +23,6 @@ jobs:
       run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
     - name: make all
       run: |
+        make all -C Linux_MiniProject/CinemaTicketRecording/
         g++ Linux_MiniProject/CinemaTicketRecording/Moviedb-test.cpp -lgtest -lgtest_main -lpthread -o Linux_MiniProject/CinemaTicketRecording/all.out
         valgrind ./all.out
