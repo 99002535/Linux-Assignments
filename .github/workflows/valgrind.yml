@@ -20,4 +20,5 @@ jobs:
     - name: make test
       run: |
         make test -C Linux_MiniProject/CinemaTicketRecording
-        valgrind ./Linux_MiniProject/CinemaTicketRecording/build/test_CinemaTicket.out
+        valgrind ./Linux_MiniProject/CinemaTicketRecording/Movie-test.o
+        valgrind ./Linux_MiniProject/CinemaTicketRecording/Moviedb-test.o
