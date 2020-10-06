@@ -23,9 +23,9 @@ jobs:
       run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
     - name: make all
       run: |
-        g++ -I../include -L../  ../src/gtest_main.cc Linux_MiniProject/CinemaTicketRecording/Movie.o -lpthread -lgtest -lgtest_main
-        g++ -I../include -L../  ../src/gtest_main.cc Linux_MiniProject/CinemaTicketRecording/MovieLang.o -lpthread -lgtest -lgtest_main
-        g++ -I../include -L../  ../src/gtest_main.cc Linux_MiniProject/CinemaTicketRecording/Moviedb.o -lpthread -lgtest -lgtest_main
-        g++ -I../include -L../  ../src/gtest_main.cc Linux_MiniProject/CinemaTicketRecording/Movie-test.o -lpthread -lgtest -lgtest_main
-        g++ -I../include -L../  ../src/gtest_main.cc Linux_MiniProject/CinemaTicketRecording/Moviedb-test.o -o all.out -lpthread -lgtest -lgtest_main
+        g++  Linux_MiniProject/CinemaTicketRecording/Movie.o -lpthread -lgtest -lgtest_main
+        g++  Linux_MiniProject/CinemaTicketRecording/MovieLang.o -lpthread -lgtest -lgtest_main
+        g++  Linux_MiniProject/CinemaTicketRecording/Moviedb.o -lpthread -lgtest -lgtest_main
+        g++  Linux_MiniProject/CinemaTicketRecording/Movie-test.o -lpthread -lgtest -lgtest_main
+        g++  Linux_MiniProject/CinemaTicketRecording/Moviedb-test.o -o all.out -lpthread -lgtest -lgtest_main
         valgrind ./Linux_MiniProject/CinemaTicketRecording/all.out
