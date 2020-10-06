@@ -1,5 +1,5 @@
 # Linux-Assignments
-Linux Mini Project - Cinema Ticket Recording System - it records the movies to be added to the database upon request from the client
+**-*Linux Mini Project-*** -*Cinema Ticket Recording System-* - This Mini Project is implemented in the C++ programming language with the inclusion of Linux related concepts such as Threads and  Mutex to perform mutual exclusion. This project is an implementation of addition, deletion and updation of movies and their data such as Name, Release date, price of the ticket, Language to the database of a Cinema hall. One thread would handle the addition of movies while the other thread is used to count the list of movies inserted or currently in the database. A mutex lock is applied so that the process of counting would happen only after the first thread's instructions are executed and the lock is released. Google Testing has been implemented to perform the unit testing on the Project.
 
 |Cppcheck|UnitTesting|C/C++ CI|Valgrind|Codacy|
 |--------|-----------|--------|--------|------|
