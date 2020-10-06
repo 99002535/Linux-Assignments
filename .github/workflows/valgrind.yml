@@ -17,8 +17,6 @@ jobs:
       run: |
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
-    - name: Install Cunit
-      run: sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
     - name: Install gtest manually
       run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp *.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
     - name: make all
@@ -28,4 +26,5 @@ jobs:
         g++ Linux_MiniProject/CinemaTicketRecording/Moviedb.cpp 
         g++ Linux_MiniProject/CinemaTicketRecording/Movie-test.cpp 
         g++ Linux_MiniProject/CinemaTicketRecording/Moviedb-test.cpp -o all.out -lpthread -lgtest -lgtest_main
-        valgrind ./Linux_MiniProject/CinemaTicketRecording/all.out
+    - name: Valgrind
+      run : valgrind ./Linux_MiniProject/CinemaTicketRecording/all.out
